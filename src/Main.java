@@ -11,6 +11,7 @@ public class Main {
         double input4 = 0.0;
         double input5 = 0.0;
 
+        // Declaring the other variables
         double total = 0.0;
         double average;
         double interest;
@@ -20,17 +21,19 @@ public class Main {
         double interestRate = 0.20;
         double input;
 
+        // user input loop
         while (inputCounter <= 5) {
             System.out.print("Please enter value " + inputCounter + ": ");
             input = scnr.nextDouble();
 
+            // stores each input into a different variable
             if (inputCounter == 1) input1 = input;
             else if (inputCounter == 2) input2 = input;
             else if (inputCounter == 3) input3 = input;
             else if (inputCounter == 4) input4 = input;
             else if (inputCounter == 5) input5 = input;
 
-            total += input;
+            total += input; // adds each input to the total
 
             if (input > max) max = input; // This line checks for a new maximum value
             if (input < min) min = input; // This line checks for a new minimum value

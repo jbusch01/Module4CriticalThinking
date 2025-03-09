@@ -1,0 +1,32 @@
+Start 
+    declare variables for inputs, total, max, min, average, interest, interest rate
+
+    set total to 0
+    set max to smallest possible value (Double.MIN_VALUE) to avoid errors
+    set min to largest possible value (Double.MAX_VALUE) to avoid errors
+    set interest rate to 20%
+
+    while loop (to get 5 inputs)
+        Prompt for user input
+        Read input
+
+        Store input in appropriate variables
+
+        Add inputs to total
+
+        If input is more than max, update max
+        If input is less than min, update min
+
+    End while loop
+
+    Calculate average by dividing by number of inputs
+    Calculate interest of total by multiplying by interest rate
+    
+    Output stored input for verification
+    Output total
+    Output average
+    Output maximum
+    Output minimum
+    Output interest
+
+End
